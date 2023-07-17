@@ -115,6 +115,7 @@
 		font-size: 18px;
 		line-height: 120%;
 		font-weight: 400;
+		max-width: 144px;
 	}
 	&__icon {
 		&-arrow {
@@ -128,7 +129,7 @@
 	}
 }
 
-@media (max-width: 540px) {
+@media (max-width: 638px) {
 	.contacts {
 		&__container {
 			bottom: 55px;
