@@ -14,29 +14,21 @@ function init() {
   } else {
     return;
   }
-  const chelyaBinksMark = new ymaps.GeoObject({
-    geometry: {
-      type: "Point",
-      coordinates: [55.175051, 61.391001]
-    }
+  const chelyaBinksMark = new ymaps.Placemark([55.175051, 61.391001], {
+    iconCaption: "ул. Братьев Кашириных, 32",
+    balloonContentBody: "ул. Братьев Кашириных, 32"
   });
-  const EkbMark = new ymaps.GeoObject({
-    geometry: {
-      type: "Point",
-      coordinates: [56.81921890941135, 60.651566054080554]
-    }
+  const EkbMark = new ymaps.Placemark([56.81921890941135, 60.651566054080554], {
+    iconCaption: "ул. Гагарина, 1а",
+    balloonContentBody: "ул. Гагарина, 1а"
   });
-  const StPetersburgMark = new ymaps.GeoObject({
-    geometry: {
-      type: "Point",
-      coordinates: [59.92901056417907, 30.38784099999998]
-    }
+  const StPetersburgMark = new ymaps.Placemark([59.92901056417907, 30.38784099999998], {
+    iconCaption: "Синопская набережная, д. 22, 4-й этаж",
+    balloonContentBody: "Синопская набережная, д. 22, 4-й этаж"
   });
-  const MoscowMark = new ymaps.GeoObject({
-    geometry: {
-      type: "Point",
-      coordinates: [55.451272, 37.749607]
-    }
+  const MoscowMark = new ymaps.Placemark([55.451272, 37.749607], {
+    iconCaption: "Сибирский Тракт, д.12 (бизнес-комплекс «Квартал»)",
+    balloonContentBody: "Сибирский Тракт, д.12 (бизнес-комплекс «Квартал»)"
   });
   const marks = [chelyaBinksMark, EkbMark, StPetersburgMark, MoscowMark];
   const buttons = document.querySelectorAll(".contacts__city");

@@ -218,7 +218,8 @@ html {
 .contacts__connect {
   font-size: 18px;
   line-height: 120%;
-  font-weight: 400
+  font-weight: 400;
+  max-width: 144px
 }
 .contacts__icon-arrow-white {
   margin-top: -4px;
@@ -228,7 +229,7 @@ html {
   transition: transform .3s,-webkit-transform .3s;
   fill: var(--white-color)
 }
-@media (max-width:540px) {
+@media (max-width:638px) {
   .contacts__container {
     bottom: 55px;
     max-width: 100%;
